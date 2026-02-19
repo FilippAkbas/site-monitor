@@ -5,25 +5,8 @@
 #  on state changes (DOWN / RECOVERY).
 # =============================================================
 
-SITES=(
-  "httpsbastaitalia.org"
-  "activitaly.com"
-  "italy-positano.com"
-  "slackware-italia.com"
-  "tartufoitalia.com"
-  "italyanca.info"
-  "littlebiteofitaly.net"
-  "per-erezione-italy.info"
-  "httpsvideoplaza.it"
-  "potenziamentopescarachieti.it"
-  "veronellazimella.it"
-  "chickenroads-italy.com"
-  "httpsgallusitalia.it"
-  "mastikafest.com"
-  "pisanienrico.com"
-  "joanaldakar.com"
-  "httpstadalistaitalia.net"
-)
+# Sites loaded from GitHub Secret SITES_LIST (comma-separated)
+IFS=',' read -ra SITES <<< "$SITES_LIST"
 
 STATE_DIR=".monitor-state"
 mkdir -p "$STATE_DIR"
