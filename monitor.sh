@@ -6,6 +6,7 @@
 # =============================================================
 
 SITES=(
+  "this-site-does-not-exist-test-123.com"
   "httpsbastaitalia.org"
   "activitaly.com"
   "italy-positano.com"
